@@ -31,6 +31,6 @@ public class Programa { // descrição da classe
 
 // no Java toda Classe é uma subclasse da Classe Object
 // toString = trata-se de um método da subclasse Object
-// por isso todo objeto instanciado em qualquer Classe poderá acessar os métodos Classe Object
+// por isso todo objeto instanciado em qualquer Classe poderá acessar os métodos da Classe Object
 
 
