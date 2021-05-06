@@ -45,5 +45,4 @@ public class FolhaPagamento {
 		
 		sc.close();
 	}
-
 }
