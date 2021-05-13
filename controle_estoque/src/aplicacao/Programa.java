@@ -12,19 +12,19 @@ public class Programa { // descrição da classe
 		Locale.setDefault(Locale.US); // usando a biblioteca Locale
 		Scanner sc = new Scanner(System.in); // usando a biblioteca Scanner
 		
-		Produto produto = new Produto(); // instanciando o objeto produto da classe Produto
-		
 		System.out.println("ENTRE COM O PRODUTO"); // título da aplicação
 		System.out.println();
 		
 		System.out.print("Nome: "); // solicitando ao usuário o nome do produto
-		produto.nome = sc.nextLine(); // guardando a resposta do usuário no objeto produto no atributo nome
+		String nome = sc.nextLine(); // guardando a resposta do usuário no objeto produto no atributo nome
 		
 		System.out.print("Preço: ");
-		produto.preco = sc.nextDouble();
+		double preco = sc.nextDouble();
 		
-		System.out.print("Quantidade: ");
-		produto.quantidade = sc.nextInt();
+//		System.out.print("Quantidade: ");
+//		int quantidade = sc.nextInt();
+		
+		Produto produto = new Produto(nome, preco);		
 		
 		System.out.println();
 		System.out.println("Dados do produto: " + produto); // quando coloco apenas o nome do objeto no println o Java já entende que a resposta será do tipo String.
