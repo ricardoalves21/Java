@@ -8,6 +8,22 @@ public class Produto {
 	public double preco;
 	public int quantidade;
 	
+	// CONSTRUTOR
+	
+	public Produto(String nome, double preco, int quantidade) { // construtores são executados no momento da instanciação de um objeto
+		this.nome = nome; // essa declaração diz que o atributo da classe (nome) recebe o parametro do objeto (nome)
+		this.preco = preco;
+		this.quantidade = quantidade;		
+	}
+	
+	// OUTRO CONSTRUTOR PARA USO DE SOBRECARGA
+	// a sobrecarga diz sobre o uso de mais de um construtor na aplicação
+	
+	public Produto(String nome, double preco) { // construtores são executados no momento da instanciação de um objeto
+		this.nome = nome; // essa declaração diz que o atributo da classe (nome) recebe o parametro do objeto (nome)
+		this.preco = preco;	
+	}
+	
 	// CRIACAO DOS METODOS DA CLASSE
 	
 	public double valorTotalEstoque() {
