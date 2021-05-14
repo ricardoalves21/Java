@@ -29,6 +29,26 @@ public class Produto {
 	
 	// CRIACAO DOS METODOS DA CLASSE
 	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public double getPreco() {
+		return preco;
+	}
+	
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	
+	public double getQuantidade() {
+		return quantidade;
+	}
+	
 	public double valorTotalEstoque() {
 		return preco * quantidade;
 	}

@@ -26,6 +26,13 @@ public class Programa { // descrição da classe
 		
 		Produto produto = new Produto(nome, preco);		
 		
+		produto.setNome("Computador");
+		System.out.println("Atualizar nome: " + produto.getNome());
+		
+		produto.setPreco(500.00);
+		System.out.println("Preço atualizado: " + produto.getPreco());
+		
+		
 		System.out.println();
 		System.out.println("Dados do produto: " + produto); // quando coloco apenas o nome do objeto no println o Java já entende que a resposta será do tipo String.
 		
