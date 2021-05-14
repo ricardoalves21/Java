@@ -4,11 +4,14 @@ public class Produto {
 	
 	// CRIACAO DOS ATRIBUTOS DA CLASSE
 	
-	public String nome;
-	public double preco;
-	public int quantidade;
+	private String nome;
+	private double preco;
+	private int quantidade;
 	
 	// CONSTRUTOR
+	
+	public Produto() { // quando um método tem exatamento o nome da classe, quer dizer que este método é um construtor.
+	}
 	
 	public Produto(String nome, double preco, int quantidade) { // construtores são executados no momento da instanciação de um objeto
 		this.nome = nome; // essa declaração diz que o atributo da classe (nome) recebe o parametro do objeto (nome)
