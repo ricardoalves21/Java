@@ -5,16 +5,15 @@ public class Conta {
 	// ATRIBUTOS
 	private int numero;
 	private String nome;
-	private String resp;
 	private double deposito;
 	private double saldo;
 	
 	
 	// CONSTRUTOR
-	public Conta(int numero, String nome, double deposito) {
+	public Conta(int numero, String nome, double deposito) {		
 		this.numero = numero;
 		this.nome = nome;
-		this.deposito = deposito;
+		this.deposito = deposito;		
 	}
 	
 	// CONSTRUTOR para sobrecarga
@@ -23,15 +22,20 @@ public class Conta {
 		this.nome = nome;
 	}
 	
+	
 	// METODOS MODIFICADORES
 	public double getSaldo() {
 		return saldo;
 	}
-
 	
-	//OUTROS METODOS
-	public void saldoAtual(double deposito) {
-				this.saldo += deposito;
+	//OUTROS METODOS	
+	
+	public void saldoAtual(double deposito, double saque) {
+		if ((deposito > 0) && (saque == 0)) {
+			this.saldo += deposito;			
+		} else if ((deposito == 0) && (saque > 0)) {
+			this.saldo = this.saldo - saque - 5.00;
+		}
 	}
 
 	public String toString() {
@@ -43,13 +47,7 @@ public class Conta {
 				+ "Nome do Titular: "
 				+ nome
 				+ "\n"
-				+ "Valor do depósito: "
-				+ deposito
-				+ "\n"
 				+ "Saldo: "
 				+ this.saldo;
 	}
-
-
 }
-
