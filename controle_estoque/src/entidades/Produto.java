@@ -29,6 +29,10 @@ public class Produto {
 	
 	// CRIACAO DOS METODOS DA CLASSE
 	
+	public void setNome (String nome) { // método set
+		this.nome = nome;
+	}
+	
 	public double valorTotalEstoque() {
 		return preco * quantidade;
 	}
