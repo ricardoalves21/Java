@@ -1,31 +1,31 @@
 package entidade;
 
-public class Produto {
+public class Hotel {
 	
 	// ATRIBUTOS
 	private String nome;
-	private double preco;
+	private String email;
 	
 	// CONSTRUTOR
-	public Produto(String nome, double preco) {
+	public Hotel(String nome, String email) {
 		this.nome = nome;
-		this.preco = preco;
+		this.email = email;
 	}
-
+	
 	// METODOS MODIFICADORES
 	public String getNome() {
 		return nome;
 	}
-
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public double getPreco() {
-		return preco;
+	
+	public String getEmail() {
+		return email;
 	}
-
-	public void setPreco(double preco) {
-		this.preco = preco;
-	}	
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
 }
