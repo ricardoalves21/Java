@@ -1,5 +1,6 @@
 package aplicacao;
 
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 import entidade.Hotel;
@@ -11,10 +12,11 @@ public class Hospedagem {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int n_quartos = 2;
+		int n_quartos = 10;
 		Hotel[] quarto = new Hotel[n_quartos];
 			
 		System.out.println("XXXXXXXXXX HOSPEDAGEM XXXXXXXXXX");
+		System.out.println();
 		
 		for (int i=0; i<quarto.length; i++) {
 			
@@ -25,14 +27,27 @@ public class Hospedagem {
 			String email = sc.next();
 			
 			System.out.print("Apartamento do hospede [0 a 9]: ");
-			int ap = sc.nextInt();
+			int apto = sc.nextInt();
 			
-			quarto[ap] = new Hotel(nome, email);
+			quarto[i] = new Hotel(nome, email, apto);
 			
-		}		
+			System.out.println();
+			System.out.print("Deseja hospedar mais pessoas [s/n] ? ");
+			String resp = sc.next();
+			
+			if ("n".contentEquals(resp)) {
+				i = 10;
+			}
+			
+			System.out.println();
+			
+		}	
+		
+		System.out.println("********** RELATORIO DE HOSPEDAGEM **********");
+		System.out.println();
 		
 		for (int i=0; i<quarto.length; i++) {
-			System.out.println(i + ": " + quarto[i].getNome() + ", " + quarto[i].getEmail());
+			System.out.println(quarto[i]);
 		}
 		
 		sc.close();
