@@ -1,6 +1,5 @@
 package aplicacao;
 
-import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 import entidade.Hotel;
@@ -18,10 +17,15 @@ public class Hospedagem {
 		System.out.println("XXXXXXXXXX HOSPEDAGEM XXXXXXXXXX");
 		System.out.println();
 		
+<<<<<<< HEAD
 		System.out.print("Quantos quartos serão alugados? ");
 		int hospedagens = sc.nextInt();
 			
 
+=======
+		System.out.println("Quantos quartos para hospedar? ");
+		int hospedagens = sc.nextInt();
+>>>>>>> c3337cacb7bdfd5d84728f270dcb53e5f525587d
 		
 		for (int i=0; i<hospedagens; i++) {
 			
@@ -38,6 +42,7 @@ public class Hospedagem {
 			
 			}
 			
+<<<<<<< HEAD
 		System.out.println();
 		
 		System.out.println("********** RELATORIO DE HOSPEDAGEM **********");
@@ -52,7 +57,27 @@ public class Hospedagem {
 			
 			System.out.println(quarto[i].getApto());
 		}
+=======
+		System.out.println();
 		
+		for (Hotel lista : quarto) { // para cada objeto 'lista' contido no vetor 'quarto' do tipo Hotel' faça...
+			System.out.println(lista); // imprimir na tela o objeto 'lista'
+		}	
+		
+>>>>>>> c3337cacb7bdfd5d84728f270dcb53e5f525587d
+		
+//		for (int i=0; i<hospedagens; i++) {
+//			System.out.println(quarto[i].getApto());
+//			for (int j=0; j<hospedagens; j++) {
+//				System.out.println(quarto[j].getApto());
+//			}
+//		}
+			
+	
 		sc.close();
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c3337cacb7bdfd5d84728f270dcb53e5f525587d
