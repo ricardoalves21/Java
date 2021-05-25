@@ -61,13 +61,13 @@ public class ExercicioMatriz {
 						System.out.println("Esquerda: "+mat[i][j-1]);	
 					} 
 					
-					if (i == m) {
+					if (i == m-1) {
 						System.out.println("Abaixo: não tem");
 					} else {
 						System.out.println("Abaixo: "+mat[i+1][j]);
 					} 
 					
-					if (j == n) {
+					if (j == n-1) {
 						System.out.println("Direita: não tem");
 					} else {
 						System.out.println("Direita: "+mat[i][j+1]);	
